@@ -3,6 +3,6 @@ $dns_servers = Read-Host -prompt "Enter a comma-separated list of the DNS server
 $servers = get-content $servers_list_file
 foreach ($server in $servers){
 	invoke-command $server -ScriptBlock{
-		get-netadapter | Select -ExpandProperty Name | foreach {set-dnsclientserveraddress -InterfaceAlias $_ -ServerAddresses $using:dns_servers}
+		get-netIPaddress | Where {$_.PrefixOrigin -eq "Manual"} | Select -ExpandProperty InterfaceAlias | foreach {set-dnsclientserveraddress -InterfaceAlias $_ -ServerAddresses $using:dns_servers}
 	}
 }
