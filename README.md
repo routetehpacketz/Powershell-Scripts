@@ -2,6 +2,7 @@
 This is a master repository for Powershell scripts that may be useful more than one time.
 
 #### change_DNS_servers.ps1
+Compatibility: Windows Server 2012 R2 or higher
 ------
 Prompts for a text file containing a list of target computer names and prompts for a list of DNS server IPs to set on the target computers:
 ```
