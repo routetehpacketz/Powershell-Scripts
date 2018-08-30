@@ -1,7 +1,7 @@
 # Powershell-Scripts
 This is a master repository for Powershell scripts that may be useful more than one time.
 
-change_DNS_servers.ps1
+#### change_DNS_servers.ps1
 ------
 Prompts for a text file containing a list of target computer names and prompts for a list of DNS server IPs to set on the target computers:
 ```
