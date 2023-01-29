@@ -1,7 +1,7 @@
 # Powershell-Scripts
 This is a generic repository of Powershell scripts that some may find useful. Most will require RSAT.
 
-#### change_DNS_servers.ps1
+## change_DNS_servers.ps1
 ------
 
 Compatibility: Windows Server 2012 R2 or higher
@@ -13,7 +13,7 @@ Enter a comma-separated list of the DNS server IP addresses you want to apply to
 ```
 Note: This script will change the DNS server IPs on __all__ network adapters *with static IP configuration*. Adapters set to obtain IP info automatically will not be changed.
 
-#### dns_find_missing_ptr_records.ps1
+## dns_find_missing_ptr_records.ps1
 
 This script queries for all static AD DNS A records in a specified forward lookup zone and checks to see if there is a corresponding PTR record in the respective reverse DNS zone. It will then provide the option to output the results to a CSV file in the running user's Documnets folder. It currently runs on console prompts, but I plan to change it to use input parameters.
 
