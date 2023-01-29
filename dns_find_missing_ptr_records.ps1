@@ -42,7 +42,7 @@ if ($missing_ptrs.Count -lt 2){
 } else{
 	Write-Host "You have $($missing_ptrs.Count) missing PTR records."
 	Write-Host "Would you like to output these results to a CSV file?"
-	$output_results = Read-Host -Prompt "Please answer [yes] or [n]o"
+	$output_results = Read-Host -Prompt "Please answer [y]es or [n]o"
 	while (@('yes','y','no','n') -NotContains $output_results){
 		$output_results = Read-Host -Prompt "Please answer [yes] or [n]o"
 	}
